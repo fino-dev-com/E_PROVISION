@@ -8,14 +8,9 @@ const containholder = [{
     rating: 5,
     points: 330
   },
-  options: {
-    piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 2500 
 },
 {
@@ -25,14 +20,10 @@ const containholder = [{
     rating: 4,
     points: 191
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: 'hind-option',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Piece">Piece</option>
+              <option value="Carton">Carton</option>
+            </select>`,
   price: 1600
 },
 {
@@ -42,14 +33,10 @@ const containholder = [{
     rating: 3,
     points: 91
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+    options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+              <option value="Pieces">Pieces</option>
+            </select>`,
   price: 21000
 },
 {
@@ -59,31 +46,22 @@ const containholder = [{
     rating: 2,
     points: 53
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+            <option value="Parket">Parket</option>
+            <option value="Pieces">Pieces</option>
+          </select>`,
   price: 2500
 },
 {
   image: 'icons/rice.jpeg',
-  name: 'Inported white rice 25kg',
+  name: 'Inported brown rice (chamption) 25kg',
   ratings: {
     rating: 4,
     points: 101
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: 'hind-option',
-    bag: '',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Bag">Bag</option>
+            </select>`,
   price: 13500
 },
 {
@@ -93,14 +71,10 @@ const containholder = [{
     rating: 3,
     points: 67
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: 'hind-option',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Pieces">Pieces</option>
+              <option value="Carton">Carton</option>
+            </select>`,
   price: 3500
 },
 {
@@ -110,14 +84,10 @@ const containholder = [{
     rating: 4,
     points: 185
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: 'hind-option',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Pieces">Pieces</option>
+              <option value="Carton">Carton</option>
+            </select>`,
   price: 3500
 },
 {
@@ -127,15 +97,12 @@ const containholder = [{
     rating: 3,
     points: 95
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
-  price: 2800
+  options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+              <option value="Carton">Carton</option>
+              <option value="Pieces">Pieces</option>
+            </select>`,
+  price: 3200
 },
 {
   image: 'icons/helneken.jpg',
@@ -144,14 +111,9 @@ const containholder = [{
     rating: 4,
     points: 125
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+    options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 19000
 },
 {
@@ -161,14 +123,9 @@ const containholder = [{
     rating: 5,
     points: 243
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 17500
 },
 {
@@ -178,14 +135,10 @@ const containholder = [{
     rating: 3,
     points: 101
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: 'hind-option',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Pieces">Pieces</option>
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 5000
 },
 {
@@ -195,14 +148,10 @@ const containholder = [{
     rating: 5,
     points: 302
   },
-  options: {
-     piese: '',
-    carton: '',
-    parket: 'hind-option',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option',
-  },
+  options: `<select name="description" id="description">
+            <option value="Pieces">Pieces</option>
+            <option value="Carton">Carton</option>
+          </select>`,
   price: 2000
 },
 {
@@ -212,14 +161,9 @@ const containholder = [{
     rating: 4,
     points: 121
   },
-  options: {
-     piese:'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 16500
 },
 {
@@ -229,14 +173,9 @@ const containholder = [{
     rating: 5,
     points: 295
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: '',
-    bag: 'hind-option',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+    options: `<select name="description" id="description">
+              <option value="Parket">Parket</option>
+            </select>`,
   price: 17500
 },
 {
@@ -246,14 +185,9 @@ const containholder = [{
     rating: 3,
     points: 154
   },
-  options: {
-     piese: 'hind-option',
-    carton: 'hind-option',
-    parket: 'hind-option',
-    bag: '',
-    tin: 'hind-option',
-    row: 'hind-option'
-  },
+  options: `<select name="description" id="description">
+            <option value="Bag">Bag</option>
+          </select>`,
   price: 12000
 }]
 const catergory = [...new Set(containholder.map((item) => {return item}))];
@@ -292,14 +226,7 @@ const displayitem = (items) => {
         </div>
         <div class="product-description">
             <label for="description">Content :</label>
-            <select name="description" id="description">
-              <option class="${options.piese}" value="Piece">Piece</option>
-              <option class="${options.carton}" value="Carton">Carton</option>
-              <option class="${options.bag}" value="Bag">Bag</option>
-              <option class="${options.parket}" value="Parket">Parket</option>
-              <option class="${options.tin}" value="Tin">Tin</option>
-              <option class="${options.row}" value="Row">Row</option>
-            </select>
+            ${options}
         </div>
         <div class="product-quantity">
           <label for="quantity">Qty:</label>
