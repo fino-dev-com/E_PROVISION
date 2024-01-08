@@ -201,9 +201,9 @@ searchbars.forEach(searchbar => {
       )
     })
     displayitem(filterdata);
+    
   })
-})
-
+});
 
 
 const displayitem = (items) => {
@@ -222,7 +222,7 @@ const displayitem = (items) => {
           <span>
             <img class="rating-star-image" src="icons/image_rating-star_${ratings.rating}.png" alt="rating star">
           </span>
-          <span class="rate-point">${ratings.points}</span>
+          <span class="rate-point rate-points.js">${ratings.points}</span>
         </div>
         <div class="product-description">
             <label for="description">Content :</label>
@@ -243,15 +243,58 @@ const displayitem = (items) => {
               <div class="dms-hide">Added to cart</div>
         </div>
         <div class="add-to-cart-button">
-          <button class="add-to-cart">
+          <button class="add-to-cart add-to-cart-js"
+          data-product-name="${name}"
+          data-product-price="${price}"
+          data-product-image="${image}"
+          data-product-points="${ratings.points}">
             Add to cart
           </button>
         </div>
       </div>
     </div>`)
   }).join('')
+  
 };
 displayitem(catergory);
+
+document.querySelectorAll('.add-to-cart-js')
+  .forEach(button => {
+    button.addEventListener('click', () => {
+      const produtImage = button.dataset.productImage;
+      const produtName = button.dataset.productName;
+      const produtPrice = button.dataset.productPrice;
+      const produtratingspoints = button.dataset.productPoints;
+
+      console.log(produtratingspoints);
+      let matchingItem;
+      cart.forEach(cartItems => {
+        if (produtName === cartItems.productName) {
+          matchingItem = cartItems;
+        }
+      })
+
+      if (matchingItem) {
+        matchingItem.quantity += 1;
+      }else {
+        cart.push({
+          produtImage: produtImage,
+          productName: produtName,
+          quantity: 1,
+          produtPrice: produtPrice
+        })
+      }
+      
+      
+      let cartquantitys = 0;
+      cart.forEach(items => {
+        cartquantitys += items.quantity
+      })
+      document.querySelector('.cart-notis').innerHTML = cartquantitys;
+      
+    })
+});
+
 
 
 
