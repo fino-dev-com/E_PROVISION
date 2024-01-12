@@ -83,6 +83,7 @@ body{
   border: solid 2px rgb(243, 174, 174);
   background-color: rgb(228, 225, 225);
   flex: 1;
+  zoom: none;
 }
 .title-holder .search-box-holder{
   flex: 1;
