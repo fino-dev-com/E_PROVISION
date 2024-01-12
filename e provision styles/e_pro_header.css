@@ -68,6 +68,9 @@ body{
   justify-content: center;
   zoom: none;
 }
+.first-search-box:focus,.search-box-holder:focus{
+  zoom: none;
+}
 .search-box-holder{
   flex: 1;
   max-width: 600px;
