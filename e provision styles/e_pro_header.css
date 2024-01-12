@@ -66,6 +66,7 @@ body{
   height: 100%;
   display: flex;
   justify-content: center;
+  zoom: none;
 }
 .search-box-holder{
   flex: 1;
@@ -73,7 +74,7 @@ body{
   height: 25px;
   padding: 0px 10px;
   width: 100%;
-  
+  zoom: none;
 }
 #search-bar{
   height: 100%;
@@ -83,8 +84,8 @@ body{
   border: solid 2px rgb(243, 174, 174);
   background-color: rgb(228, 225, 225);
   flex: 1;
-  zoom: none;
 }
+
 .title-holder .search-box-holder{
   flex: 1;
   margin-bottom: 20px;
