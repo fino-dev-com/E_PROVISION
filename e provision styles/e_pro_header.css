@@ -3,8 +3,8 @@
   padding: 0;
 }
 body{
-  max-width: 1366px;
   padding-top: 91px;
+  max-width: 1366px;
 }
 .header{
   display: grid;
@@ -12,6 +12,7 @@ body{
   grid-template-rows: 50px 40px;
   background-color: rgb(34, 33, 32);
   color: white;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;

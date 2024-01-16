@@ -23,7 +23,7 @@ const displayitem = (items) => {
   document.querySelector('.body-holder').innerHTML=items.map((item) => {
     var { image, name, ratings, price, options, id } = item;
     return ( 
-    `<div class="main">
+    `<div class="main ${id}hide">
       <div class="main-contian-holder">
         <div class="image-holder vjjz" id="chl-product-image1">
           <img class="product-image" src="${image}" alt="product image">
