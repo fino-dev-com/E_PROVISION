@@ -13,30 +13,29 @@ cart.forEach(checkoutitems => {
       matchingproduct = product;
     }
   });
-
  cartsummaryHtml += `
-  <div class="chk-l-b product-image-holder cart-item-div-${matchingproduct.id}">
+  <div class="chk-l-b product-image-holder cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
     <img class="product-image" src="${matchingproduct.image}" alt="product-image">
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id} chk-b-product-name">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} chk-b-product-name">
     ${checkoutitems.productName}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
     ${checkoutitems.productdescription}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
     ${checkoutitems.productquantity}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}">
-    ${matchingproduct.price}
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
+    ${checkoutitems.produtPrice}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
     ${checkoutitems.productamount}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id} chk-option">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} chk-option">
     <button class="chk-update-btn">Update</button>
     <button class="chk-delete-btn js-delete-link"
-    data-product-id = "${matchingproduct.id}">Delete</button>
+    data-product-id = "${matchingproduct.id}${checkoutitems.productdescription}">Delete</button>
   </div>
   `;
 });

@@ -21,7 +21,7 @@ export const containholder = [{
   },
   options: `<option value="Pieces">Piece</option>
             <option value="Carton">Carton</option>`,
-  price: 8500
+  price: 8000
 },
 {
   id: 'cerlor5Ljpegg002',
@@ -33,7 +33,7 @@ export const containholder = [{
   },
   options: `<option value="Pieces">Piece</option>
             <option value="Carton">Carton</option>`,
-  price: 8000
+  price: 8500
 },
 {
   id: 'Mayoroil20litterg003',
@@ -65,14 +65,13 @@ export const containholder = [{
     rating: 1,
     points: 53
   },
-  options: `<option value="Parket">Parket</option>
-            <option value="Pieces">Pieces</option>`,
+  options: `<option value="Parket">Parket</option>`,
   price: 2500
 },
 {
   id: 'stantupufreshjpg001',
   image: 'icons/stantup u fresh.jpg',
-  name: 'Stantup U Fresh ',
+  name: 'Standup U Fresh ',
   ratings: {
     rating: 3,
     points: 194
@@ -100,7 +99,7 @@ export const containholder = [{
     points: 101
   },
   options: `<option value="Bag">Bag</option>`,
-  price: 13500
+  price: 14000
 },
 {
   id: 'Inportedricechamption50kg002',
@@ -164,7 +163,7 @@ export const containholder = [{
 {
   id: 'cerelactinjpegp001',
   image: 'icons/cerelac tin.jpeg',
-  name: 'Guigoz 1 milk 400g (childern food)',
+  name: 'Cerelac 400g (childern food)',
   ratings: {
     rating: 3,
     points: 164
@@ -200,7 +199,7 @@ export const containholder = [{
 {
   id: 'guigos2400gjpebp002',
   image: 'icons/guigos 2 400g.jpeg',
-  name: 'Guigoz 2 milk 400g (childer 6months-1y)',
+  name: 'Guigoz 2 milk 400g (childern 6months-1y)',
   ratings: {
     rating: 5,
     points: 341
@@ -212,7 +211,7 @@ export const containholder = [{
 {
   id: 'nan2400gjpeg002',
   image: 'icons/nan 2 400g.jpeg',
-  name: 'Nan 2 milk 400g (childer 6months-1y)',
+  name: 'Nan 2 milk 400g (childern 6months-1y)',
   ratings: {
     rating: 4,
     points: 215
@@ -248,7 +247,7 @@ export const containholder = [{
 {
   id: 'pickmilkliquidnigerjpeg001',
   image: 'icons/pick milk liquid niger.jpeg',
-  name: 'Peak liquid milk 250g (no suger)',
+  name: 'Peak milk liqiud 250g (no suger)',
   ratings: {
     rating: 4,
     points: 271
@@ -357,7 +356,7 @@ export const containholder = [{
 {
   id: 'jadidamagarine900gjpegeg001',
   image: 'icons/jadida magarine 900g.jpeg',
-  name: 'Jadida magarine 900g',
+  name: 'Jadida margarine 900g',
   ratings: {
     rating: 4,
     points: 212
@@ -369,7 +368,7 @@ export const containholder = [{
 {
   id: 'brolimagarine250gjpegeg001',
   image: 'icons/broli magarine 250g.jpeg',
-  name: 'Broli magarine 500g',
+  name: 'Broli margarine 500g',
   ratings: {
     rating: 3,
     points: 143
@@ -381,7 +380,7 @@ export const containholder = [{
 {
   id: 'jajida400gjpegjpegeg001',
   image: 'icons/jajida 400g.jpeg',
-  name: 'Broli magarine 500g',
+  name: 'Jadida margarine 500g',
   ratings: {
     rating: 5,
     points: 382

@@ -92,7 +92,7 @@ function addtocartbutton() {
     button.addEventListener('click', () => {
       const produtImage = button.dataset.productImage;
       const produtName = button.dataset.productName;
-      const produtPrice = button.dataset.productPrice;
+      //const produtPrice = button.dataset.productPrice;
       const produtId = button.dataset.productId;
       const produtratingspoints = button.dataset.productPoints;
       const fixtid = document.querySelector(`.${produtId}`);
@@ -101,15 +101,15 @@ function addtocartbutton() {
       const rattingsid = document.querySelector(`.${produtId}rattings`);
       const displaymssgicn = document.querySelector(`.${produtId}dmessageicn`);
       const displaymssg = document.querySelector(`.${produtId}dmessage`);
+      const produtPrice = priceid.innerHTML
       const productdescription = fixtid.value;
       const productquantity = quantityid.value;
       const productamount = Number(produtPrice)*Number(productquantity);
       //const rateadd = Number(produtratingspoints) + 1;
       //rattingsid.innerHTML = Number(produtratingspoints) + 1;
-
       updaterattingpoints(rattingsid, produtId);
 
-      addtocart(produtId, produtName, productdescription, productquantity, productamount);
+      addtocart(produtId, produtName, productdescription, productquantity, productamount, produtPrice);
 
       updatecartquantity();
       
