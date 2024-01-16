@@ -176,9 +176,10 @@ hr{
   position: relative;
 }
 .cart-notis{
+  font-family: arial;
   position: absolute;
   background-color: red;
-  font-size: 14px;
+  font-size: 12px;
   padding: 3px;
   height: 12px;
   min-width: 12px;
@@ -186,8 +187,8 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
-  right: -3px;
+  top: 0px;
+  right: -5px;
 }
 @media only screen and (min-width: 1090px) {
   .second-search-box{
