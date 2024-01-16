@@ -37,7 +37,7 @@ export const containholder = [{
 },
 {
   id: 'Mayoroil20litterg003',
-  image: 'icons/mayor 20l.jpeg',
+  image: 'icons/mayor 20L.jpeg',
   name: 'Mayor oil 20litter',
   ratings: {
     rating: 1,
