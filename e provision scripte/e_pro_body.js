@@ -39,7 +39,7 @@ const displayitem = (items) => {
         </div>
         <div class="product-description">
             <label for="description">Content :</label>
-            <select name="description" class="${id} dscptn" id="description"
+            <select name="description" class="${id}description dscptn" id="description"
             data-product-id="${id}"
             data-product-price="${price}"
             data-product-name="${name}">
@@ -95,7 +95,7 @@ function addtocartbutton() {
       //const produtPrice = button.dataset.productPrice;
       const produtId = button.dataset.productId;
       const produtratingspoints = button.dataset.productPoints;
-      const fixtid = document.querySelector(`.${produtId}`);
+      const fixtid = document.querySelector(`.${produtId}description`);
       const quantityid = document.querySelector(`.${produtId}quantity`);
       const priceid = document.querySelector(`.${produtId}price`);
       const rattingsid = document.querySelector(`.${produtId}rattings`);
