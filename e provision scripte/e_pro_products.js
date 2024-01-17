@@ -2,7 +2,7 @@
 export const containholder = [{
   id: 'Mayoroil1litter001',
   image: 'icons/mayor 1ltr.png',
-  name: 'Mayor oil 1litter',
+  name: 'Mayor oil 1litter (ctn=15)',
   ratings: {
     rating: 3,
     points: 191
@@ -14,7 +14,7 @@ export const containholder = [{
 {
   id: 'mayor5ljpeg002',
   image: 'icons/mayor 5l.jpeg',
-  name: 'Mayor oil 5litter',
+  name: 'Mayor oil 5litter (ctn=4)',
   ratings: {
     rating: 4,
     points: 225
@@ -26,7 +26,7 @@ export const containholder = [{
 {
   id: 'cerlor5Ljpegg002',
   image: 'icons/cerlor 5L.jpeg',
-  name: 'Celor oil 5litter',
+  name: 'Celor oil 5litter (ctn=4)',
   ratings: {
     rating: 3,
     points: 200
@@ -60,7 +60,7 @@ export const containholder = [{
 {
   id: 'UFresh1L001',
   image: 'icons/u fresh 1l.jpeg',
-  name: 'U Fresh 1litter',
+  name: 'U Fresh 1litter (pk=6)',
   ratings: {
     rating: 1,
     points: 53
@@ -71,7 +71,7 @@ export const containholder = [{
 {
   id: 'stantupufreshjpg001',
   image: 'icons/stantup u fresh.jpg',
-  name: 'Standup U Fresh ',
+  name: 'Standup U Fresh (pk=32)',
   ratings: {
     rating: 3,
     points: 194
@@ -82,7 +82,7 @@ export const containholder = [{
 {
   id: 'Plannetjuice001',
   image: 'icons/plannet.png',
-  name: 'Plannet  Juice 1.25liters',
+  name: 'Plannet  Juice 1.25liters (pk=6)',
   ratings: {
     rating: 5,
     points: 330
@@ -223,7 +223,7 @@ export const containholder = [{
 {
   id: 'Broliliquidmilk400g001',
   image: 'icons/broli liquid.jpg',
-  name: 'Broli liquid milk 400g',
+  name: 'Broli liquid milk 1kg',
   ratings: {
     rating: 5,
     points: 350
@@ -235,7 +235,7 @@ export const containholder = [{
 {
   id: 'Pavaniliquidmilk400g001',
   image: 'icons/pavani milk.jpeg',
-  name: 'Pavani liquid milk 400g',
+  name: 'Pavani liquid milk 1kg',
   ratings: {
     rating: 3,
     points: 146
@@ -259,7 +259,7 @@ export const containholder = [{
 {
   id: 'sweetcornjpegerjpeg001',
   image: 'icons/sweetcorn.jpeg',
-  name: 'Sweat Corn',
+  name: 'Sweat Corn 425g',
   ratings: {
     rating: 1,
     points: 24
@@ -271,7 +271,7 @@ export const containholder = [{
 {
   id: 'brolitinetomatojpgg001',
   image: 'icons/broli tine tomato.jpg',
-  name: 'Broli Tomato',
+  name: 'Broli Tomato 400g',
   ratings: {
     rating: 1,
     points: 38
@@ -332,7 +332,7 @@ export const containholder = [{
 {
   id: 'tatinalchocolate900gjpeg01',
   image: 'icons/tatinal chocolate 900g.jpeg',
-  name: 'Tartina chocolate 900g',
+  name: 'Tartina chocolate 900g ',
   ratings: {
     rating: 4,
     points: 250
@@ -368,7 +368,7 @@ export const containholder = [{
 {
   id: 'brolimagarine250gjpegeg001',
   image: 'icons/broli magarine 250g.jpeg',
-  name: 'Broli margarine 500g',
+  name: 'Broli margarine 450g',
   ratings: {
     rating: 3,
     points: 143
@@ -380,7 +380,7 @@ export const containholder = [{
 {
   id: 'jajida400gjpegjpegeg001',
   image: 'icons/jajida 400g.jpeg',
-  name: 'Jadida margarine 500g',
+  name: 'Jadida margarine 250g',
   ratings: {
     rating: 5,
     points: 382
@@ -392,7 +392,7 @@ export const containholder = [{
 {
   id: 'matinertea400gjpegg001',
   image: 'icons/matiner tea 400g.jpeg',
-  name: 'Martinal 500g',
+  name: 'Martinal 400g',
   ratings: {
     rating: 3,
     points: 106
@@ -404,7 +404,7 @@ export const containholder = [{
 {
   id: 'Mambo001',
   image: 'icons/mambo bti.jpeg',
-  name: 'Mambo Chocolate',
+  name: 'Mambo Chocolate 23g (pk=20)',
   ratings: {
     rating: 3,
     points: 95
@@ -416,7 +416,7 @@ export const containholder = [{
 {
   id: 'ambistickjpeg',
   image: 'icons/bambi stick.jpeg',
-  name: 'Bambi Chocolate',
+  name: 'Bambi Chocolate 10g (pk=91)',
   ratings: {
     rating: 3,
     points: 100
@@ -428,7 +428,7 @@ export const containholder = [{
 {
   id: 'SkollBottleBeer',
   image: 'icons/skoll beer.jpeg',
-  name: 'Skoll Bottle Beer',
+  name: 'Skoll Bottle Beer (pk=24)',
   ratings: {
     rating: 3,
     points: 91
@@ -440,7 +440,7 @@ export const containholder = [{
 {
   id: 'HeinekenBeeroriginal002',
   image: 'icons/helneken.jpg',
-  name: 'Heineken Beer (original)',
+  name: 'Heineken Beer (original pk=24)',
   ratings: {
     rating: 4,
     points: 125
@@ -451,7 +451,7 @@ export const containholder = [{
 { 
   id: 'HeinekenBeernigeria001',
   image: 'icons/henieken 2.jpeg',
-  name: 'Heineken Beer (nigeria)',
+  name: 'Heineken Beer (nigeria pk=24)',
   ratings: {
     rating: 5,
     points: 243
@@ -462,7 +462,7 @@ export const containholder = [{
 { 
   id: 'Checkerchidren\sfood001',
   image: 'icons/checker2.png',
-  name: 'Checker (chidren\'s food)',
+  name: 'Checker (chidren\'s food pk=4)',
   ratings: {
     rating: 3,
     points: 101
@@ -486,7 +486,7 @@ export const containholder = [{
 {
   id: 'phospatinejpegd0001',
   image: 'icons/phospatine.jpeg',
-  name: 'Phosphatine (chidren\'s food)',
+  name: 'Phosphatine (chidren\'s food) 200g',
   ratings: {
     rating: 5,
     points: 318
@@ -498,7 +498,7 @@ export const containholder = [{
 {
   id: 'BavariaBottledrinknonalcoholic002',
   image: 'icons/bavaria.jpeg',
-  name: 'Bavaria Bottle drink (non alcoholic)',
+  name: 'Bavaria Bottle drink (non alcoholic) 200g',
   ratings: {
     rating: 4,
     points: 121
@@ -509,7 +509,7 @@ export const containholder = [{
 {
   id: 'BavariaCandrinknonalcoholic001',
   image: 'icons/bavaria can.jpeg',
-  name: 'Bavaria Can drink (non alcoholic)',
+  name: 'Bavaria Can drink (non alcoholic pk=24)',
   ratings: {
     rating: 5,
     points: 295
@@ -542,7 +542,7 @@ export const containholder = [{
 {
   id: 'ozil50jpegd0001',
   image: 'icons/ozil 50.jpeg',
-  name: 'Ozil 18g',
+  name: 'Ozil 25g (Roll=12,bag=6rll)',
   ratings: {
     rating: 5,
     points: 308
