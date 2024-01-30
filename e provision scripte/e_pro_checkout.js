@@ -1,4 +1,4 @@
-import { cart, removefromcart, updatecheckoutquantity, updatecheckoutsummaryamount} from "./e_pro_cart.js";
+import { cart, removefromcart, updatecheckoutquantity, updatecheckoutsummaryamount, clickupdatebutton, updatecheckoutbody} from "./e_pro_cart.js";
 import {containholder} from "./e_pro_products.js"
 
 let cartsummaryHtml = '';
@@ -23,17 +23,31 @@ cart.forEach(checkoutitems => {
   <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
     ${checkoutitems.productdescription}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
-    ${checkoutitems.productquantity}
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} chk-l-quty ${matchingproduct.id}${checkoutitems.productdescription}p-quantity">
+    <span class="${matchingproduct.id}${checkoutitems.productdescription}quantity">
+      ${checkoutitems.productquantity}
+    </span>
+    <div class="quantity-update-holder gps hide-update 
+    ${matchingproduct.id}${checkoutitems.productdescription}update-q">
+      <label for="update-quantity">
+        Enter new quantity
+      </label><br>
+      <input type="number" id="update-quantity" min="1"
+      class="${matchingproduct.id}${checkoutitems.productdescription}quantity-u"
+      data-update-holder ="${matchingproduct.id}${checkoutitems.productdescription}">
+      <button class="confirm-button"
+      data-update-holder ="${matchingproduct.id}${checkoutitems.productdescription}">OK</button>
+    </div> 
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} ${matchingproduct.id}${checkoutitems.productdescription}unit">
     ${checkoutitems.produtPrice}
   </div>
-  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription}">
+  <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} ${matchingproduct.id}${checkoutitems.productdescription}amount">
     ${checkoutitems.productamount}
   </div>
   <div class="chk-l-b cart-item-div-${matchingproduct.id}${checkoutitems.productdescription} chk-option">
-    <button class="chk-update-btn">Update</button>
+    <button class="chk-update-btn js-update-link"
+    data-update-holder ="${matchingproduct.id}${checkoutitems.productdescription}">Update</button>
     <button class="chk-delete-btn js-delete-link"
     data-product-id = "${matchingproduct.id}${checkoutitems.productdescription}">Delete</button>
   </div>
@@ -53,8 +67,12 @@ document.querySelectorAll('.js-delete-link')
   })
 })
 
+clickupdatebutton()
+
+updatecheckoutbody()
+
+
 updatecheckoutquantity()
 
 updatecheckoutsummaryamount();
-
 

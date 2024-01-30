@@ -35,8 +35,9 @@ export function addtocart(produtId, produtName, productdescription, productquant
   }
 
   defaultqtydisplay(); 
-
-  savestocart()
+  clickupdatebutton();
+  updatecheckoutbody();
+  savestocart();
 
 }
 
@@ -60,6 +61,8 @@ export function removefromcart(productId) {
    })
    cart = newcart;
    
+   clickupdatebutton();
+   updatecheckoutbody();
    savestocart();
    updatecheckoutquantity();
    updatecheckoutsummaryamount();
@@ -92,5 +95,50 @@ export function updatecheckoutsummaryamount() {
       checkoutsammaryamount += items.productamount;
     });
   document.querySelector('.js-summary-chk-amount').innerHTML = checkoutsammaryamount;
+  savestocart();
 };
+
+export function clickupdatebutton() {
+  document.querySelectorAll(".js-update-link")
+  .forEach(updatebutton => {
+    const updateholderlink = updatebutton.dataset.updateHolder;
+    let updateholder = document.querySelector(`.${updateholderlink}update-q`);
+    const updatequantity = document.querySelector(`.${updateholderlink}quantity-u`);
+    const updateHolders = document.querySelectorAll('.gps');
+    updatequantity.value = document.querySelector(`.${updateholderlink}quantity`).innerText; 
+    updatebutton.addEventListener('click', () => {
+      updateHolders.forEach(subholders =>{
+        if (!subholders.classList.contains('hide-update')) {
+          subholders.classList.add('hide-update');
+        }
+      })
+      if (updateholder.classList.contains('hide-update')) {
+        updateholder.classList.remove('hide-update');
+      }else{
+        updateholder.classList.add('hide-update');
+      }
+    }) 
+  })
+}
+
+export function updatecheckoutbody() {
+  document.querySelectorAll(".confirm-button")
+  .forEach(okbutton => {
+    const updateholderlink = okbutton.dataset.updateHolder;
+    const updateholder = document.querySelector(`.${updateholderlink}update-q`);
+    const productudtunit = document.querySelector(`.${updateholderlink}unit`);
+    const productudtamount = document.querySelector(`.${updateholderlink}amount`);
+    const productudtquantity = document.querySelector(`.${updateholderlink}p-quantity`);
+    const updatequantity = document.querySelector(`.${updateholderlink}quantity-u`);
+    okbutton.addEventListener('click', ()=>{
+    
+      document.querySelector(`.${updateholderlink}quantity`).innerText = updatequantity.value;
+
+      updateholder.classList.toggle('hide-update');
+
+      document.querySelector(`.${updateholderlink}amount`).innerText = Number(productudtunit.innerText) * Number(productudtquantity.innerText);
+    })
+  })
+  savestocart();
+}
 

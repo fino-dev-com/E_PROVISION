@@ -83,9 +83,7 @@ body{
   background-color: green;
   color: white;
 }
-.chk-update-btn:focus{
-  opacity: 0.7;
-}
+
 
 .order-summary{
   background-color: rgb(241, 239, 239);
@@ -287,4 +285,44 @@ body{
     bottom:-200px;
     top: 102%;
   }
+}
+
+
+
+.chk-l-quty{
+  position: relative;
+}
+.quantity-update-holder{
+  width: 142px;
+  background-color: black;
+  color: white;
+  padding: 5px 7px;
+  margin-left: 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -50px;
+  z-index: 1;
+}
+.quantity-update-holder{
+  font-weight: bold;
+  
+}
+.quantity-update-holder #update-quantity{
+  max-width: 50px;
+  border: solid 2px gray;
+  padding-left: 3px;
+  border-radius: 3px;
+}
+.confirm-button{
+  padding: 2px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-left: 3px;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.hide-update{
+  display: none;
 }

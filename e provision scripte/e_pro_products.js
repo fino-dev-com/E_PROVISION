@@ -459,7 +459,7 @@ export const containholder = [{
   options: `<option value="Parket">Parket</option>`,
   price: 17500
 },
-{ 
+{  
   id: 'Checkerchidren\sfood001',
   image: 'icons/checker2.png',
   name: 'Checker (chidren\'s food pk=4)',
@@ -474,7 +474,7 @@ export const containholder = [{
 {
   id: 'Cerelacchidren\sfood0001',
   image: 'icons/cerelac.jpeg',
-  name: 'Cerelac (chidren\'s food)',
+  name: 'Cerelac (chidren\'s food) 200g',
   ratings: {
     rating: 5,
     points: 302
@@ -498,7 +498,7 @@ export const containholder = [{
 {
   id: 'BavariaBottledrinknonalcoholic002',
   image: 'icons/bavaria.jpeg',
-  name: 'Bavaria Bottle drink (non alcoholic) 200g',
+  name: 'Bavaria Bottle drink (non alcoholic pk=24)',
   ratings: {
     rating: 4,
     points: 121
